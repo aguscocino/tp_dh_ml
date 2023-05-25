@@ -1,0 +1,387 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+
+header {
+    background-color: #EAC926;
+}
+
+.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.top-header a {
+    width: 25%;
+    padding: 5px;
+    display: flex;
+    justify-content: left;
+}
+
+.top-header p{
+    font-size: 15px;
+    display: block;
+    text-align: center;
+
+}
+header p {
+    text-align: center;
+}
+
+header nav {
+    display: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+    list-style-type: none;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 42%;
+}
+
+/* barra de busqueda */
+header .buscador .input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+    background-color: transparent;
+    display: flex;
+}
+/* lupa */
+header .buscador .lupa i {
+    background-color: white;
+    border:  transparent;
+    color: #666;
+}
+.buscador {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 5px;
+    flex: 1;
+    position: relative;
+}
+header div.burger-menu i {
+    color: #fff;
+    background-color: #1259c3;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 5px;
+}
+
+header div.burger-menu {
+    text-align: center;
+}
+
+header{
+    width: 100vw;
+}
+
+.banner-img{
+    width: 100vw;
+}
+/* MAIN */
+main {
+    margin: 0 auto;
+    width: 90vw;
+}
+
+main section article {
+    margin-bottom: 10px;
+    transition: 0.7s;
+}
+main section article img {
+    width: 100%;
+}
+
+
+.info-article {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    transition: 0.7s;
+    
+}
+
+.precio {
+    width: 30%;
+}
+.descuento {
+    width: 70%;
+}
+main section article div i {
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: 0.7s;
+}
+
+
+.desc-prod {
+    display: none;
+    transition: all 0.7s;
+}
+
+
+footer {
+    display: flex;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+footer .pay {
+    padding: 30px;
+}
+
+footer .shipping {
+    padding: 30px;
+}
+
+footer .security {
+    padding: 30px;
+}
+
+footer .copyright {
+    padding: 30px;
+}
+
+.pay i {
+    color: #fff;
+    background-color: #1259c3;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 5px;
+}
+.shipping i{
+    color: #fff;
+    background-color: #1259c3;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 5px;
+}
+
+.security i {
+    color: #fff;
+    background-color: #1259c3;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 5px;
+}
+
+.copyright {
+    justify-content: center;
+    display: flex;
+}
+
+
+#formulario-registro{
+    background-color: #666;
+}
+
+.formularios{
+    display: block;
+    justify-content: right;
+    align-items: center;
+    padding: 40px;
+
+}
+@media (min-width: 350px) {
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .desc-prod {
+        display: block;
+    }
+    header .top header a {
+        display: flex;
+        justify-content: left;
+        width: 25%;
+        padding: 10px;
+    }
+    header .top-header p {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    .top-header.buscador {
+        width: 20%;
+    }
+    .top-header .logo {
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    main section article {
+        width: 45%;     
+    }
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul li {
+        display: none;
+    }
+    footer {
+        display: block;
+    }
+}
+@media (min-width: 400px) {
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .desc-prod {
+        display: block;
+    }
+    header .top header a {
+        display: flex;
+        justify-content: left;
+        width: 25%;
+        padding: 10px;
+    }
+    header .top-header p {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    .top-header.buscador {
+        width: 20%;
+    }
+    .top-header .logo {
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    main section article {
+        width: 45%;     
+    }
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul li {
+        display: none;
+    }
+    footer {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    main section article {
+        width: 22.5%;
+    }
+    main section h3 {
+        padding: 50px;
+    }
+    header nav ul li a{
+        font-size: 18px;
+        padding: 15px;
+    }
+    .desc-prod{
+        display: none;
+    }
+    .burger-menu {
+        display: none;
+    }
+    article {
+        padding: 10px;
+    }
+    .top-header .logo {
+        width: 55%;
+        padding: 10px;
+        display: flex;
+    }
+    .top-header.buscador {
+        width: 1px;
+        display: none;
+        justify-content: center;
+    }
+    .top header a {
+        display: flex;
+        justify-content: left;
+        width: 25%;
+    }
+    header .top-header p {
+        display: flex;
+        justify-content: center;
+        width: 25%;
+    }
+    article:hover .desc-prod{
+        display: block;
+    }
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    article:hover i {
+        transform: rotate(-90deg);
+    }
+    nav ul li {
+        display: flex;
+        justify-content: center;
+    }
+    footer {
+        display: flex;
+    }
+    footer .pay:hover i{
+        transform: translateY(-10px);
+    }
+    footer .shipping:hover i{
+        transform: translateY(-10px);
+    }
+    footer .security:hover i{
+        transform: translateY(-10px);
+    }
+
+    
+
+    
+}
+
+
+
