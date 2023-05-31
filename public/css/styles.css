@@ -6,12 +6,21 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+
 }
 
 /* HEADER */
 
 header {
     background-color: #EAC926;
+    width: 100vw;
+    padding: 20px;
+}
+.main-header {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .top-header {
@@ -20,6 +29,10 @@ header {
     align-items: center;
     justify-content: space-between;
 } 
+
+.top-header .logo {
+    margin: 0 auto;
+}
 
 .top-header a {
     width: 25%;
@@ -60,17 +73,25 @@ header nav ul {
 }
 
 /* barra de busqueda */
-header .buscador .input {
+.buscador .input {
     width: 100%;
     border: none;
     outline: none;
     padding: 8px;
     font-size: 16px;
-    background-color: transparent;
+    background-color: #f2f2f2;
+    display: flex;
+}
+.buscador input[type="text"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: #f2f2f2;
     display: flex;
 }
 /* lupa */
-header .buscador .lupa i {
+.buscador .lupa i {
     background-color: white;
     border:  transparent;
     color: #666;
@@ -287,9 +308,12 @@ footer .copyright {
         display: flex;
         justify-content: center;
         padding: 10px;
+        margin: 0 auto;
     }
     .top-header.buscador {
         width: 20%;
+        display: flex;
+        justify-content: center;
     }
     .top-header .logo {
         width: 90vw;
