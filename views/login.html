@@ -13,58 +13,88 @@
     <title>Mercado Liebre</title>
 </head>
 <body>
-<header>
-       
-    <div class="top-header">
-        <a href="/"><img class="logo" src="./img/logo-mercado-liebre.svg" alt="logo-mercado-liebre"></a>
-            
-        <div class="buscador">
-            <div class="input">Buscar productos, marcas</div>
-            <div class="lupa"><i class="fa fa-search"></i></div>
-        </div>
+    <header>
+        <div class="top-header-marco">
+            </div>
+        <div class="top-header">
+            <a href="/"><img class="logo" src="./img/logo-mercado-liebre.svg" alt="logo-mercado-liebre"></a>
+
+            <div class="buscador">
+                <div class="input">
+                    <div class="lupa"><i class="fa fa-search"></i></div>
+                    <input type="text" placeholder="Buscar productos, marcas">
+                </div>
+            </div>
+
+
             <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
-    </div>
-            
-            
-         
-    <nav>
-        <ul>
-            <li>
-                <a href="#">Ofertas</a>
-            </li>
-                
-            <li>
-                <a href="#">Tiendas Oficiales</a>
-            </li>
-                
-            <li>
-                <a href="#">Vender</a>
-            </li>
-                
-            <li>
-                <a href="#">Ayuda</a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a href="register">Creá tu cuenta</a>
-            </li>
-                
-            <li>
-                <a href="login">Ingresá</a>
-            </li>
-                
-            <li>
-                <a href="#">Mis compras</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="burger-menu">
-        <i class="fas fa-bars"></i>
-    </div>
-</header>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Ofertas</a>
+                </li>
+
+                <li>
+                    <a href="#">Tiendas Oficiales</a>
+                </li>
+
+                <li>
+                    <a href="#">Vender</a>
+                </li>
+
+                <li>
+                    <a href="#">Ayuda</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="register">Creá tu cuenta</a>
+                </li>
+
+                <li>
+                    <a href="login">Ingresá</a>
+                </li>
+
+                <li>
+                    <a href="#">Mis compras</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
 <main>
-aa
+    <section class="login-box">
+        <form action="">
+            <h2>Iniciar Sesión</h2>
+            <div class="input-box">
+                <span class="icono">
+                    <i class="fa-solid fa-envelope"></i>
+                </span>
+                <input type="text" required>
+                <label>Correo electrónico</label>
+            </div>
+            <div class="input-box">
+                <span class="icono">
+                    <i class="fa-solid fa-lock"></i>
+                </span>
+                <input type="password" required>
+                <label>Contraseña</label>
+            </div>
+            <div class="recordar">
+                <label><input type="checkbox">Recordar</label>
+            </div>
+            <button type="submit">Ingresar</button>
+            <div class="registrar_link">
+                <p>¿No tenés una cuenta? <a href="/registro">Registrate</a></p>
+            </div>
+        </form>
+    </section>
 </main>
 <footer>
 </footer>
